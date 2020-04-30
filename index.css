@@ -5,9 +5,19 @@ body {
 }
 
 .grid-container {
+display:grid;
+grid-template-rows: [header-start] 1fr [header-end] 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 5px;
   height: 100vh;
   width: 100vw;
-  /* your properties here */
+
+}
+.bigItem {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .grid-item {
